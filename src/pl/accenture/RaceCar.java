@@ -2,20 +2,20 @@ package pl.accenture;
 
 public class RaceCar extends Car {
 
-    void fastRide() {
-        System.out.println("fastRide in Racecar");
+    public RaceCar(String name) {
+        super(name);
     }
 
     @Override
-    void ride() {
-        super.ride();
-        System.out.println("ride Car in RaceCar");
+    void go() {
+        super.go();
+        System.out.println("jedzie raceCar");
     }
 
+
     @Override
-    void start() {
-        super.start();
-        System.out.println("start Vehicle in RaceCar");
+    double getFuelNeed() {
+        return super.getFuelNeed();
     }
 }
 

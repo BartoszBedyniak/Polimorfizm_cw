@@ -1,14 +1,37 @@
 package pl.accenture;
 
-public class Plane extends Vehicle {
-    void fly()
-    {
-        System.out.println("fly Plane");
+public class Plane extends Vehicle implements Flying {
+    public Plane(String name) {
+        super(name);
     }
 
     @Override
-    void start() {
-        super.start();
-        System.out.println("start  Vehicle in plane");
+    void go() {
+        super.go();
+    }
+
+    @Override
+    void stop() {
+        super.stop();
+        land();
+    }
+
+    @Override
+    double getDistance() {
+        return 1234124124;
+    }
+
+    @Override
+    double getFuelNeed() {
+        return 15125125;
+    }
+    public void takeOff() {
+        System.out.println("lecimy");
+    }
+    public void land(){
+        System.out.println("ladujemy");
+    }
+    public void callAirControl(){
+        System.out.println("nic nie robie");
     }
 }

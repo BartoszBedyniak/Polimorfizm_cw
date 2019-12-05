@@ -1,14 +1,18 @@
 package pl.accenture;
 
 public class Car extends Vehicle {
-    void ride()
-    {
-        System.out.println("ride car ");
+
+    public Car(String name) {
+        super(name);
     }
 
     @Override
-    void start() {
-        super.start();
-        System.out.println("start Vehicle in Car");
+    double getDistance() {
+        return 142412;
+    }
+
+    @Override
+    double getFuelNeed() {
+        return 125125125;
     }
 }
