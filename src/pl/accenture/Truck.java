@@ -8,7 +8,7 @@ public class Truck extends Car {
     @Override
     void go() {
         super.go();
-        System.out.println("start Vehicle in Truck");
+        System.out.println("Jedzie Truck");
     }
 
     @Override

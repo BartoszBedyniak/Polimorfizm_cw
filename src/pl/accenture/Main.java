@@ -9,9 +9,17 @@ public class Main {
     {
         vehicle.go();
         vehicle.stop();
+
         System.out.println(vehicle.calculateFuelConsumption());
+        if(vehicle instanceof Plane){
+        ((Plane) vehicle).land();
+        }
+        System.out.println("\n");
+
 
     }
 
     }
+
 }
+
